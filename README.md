@@ -37,5 +37,5 @@ Download (or git pull) the code in pi. Run the program
 $> python STS21.py
 ```
 
-The code output is temperature reading in degree celsius and fahrenheit.
+The code output is temperature reading in degree Celsius and Fahrenheit.
 
