@@ -3,6 +3,7 @@
 STS21 High Accuracy Temperature Sensor 
 
 The STS21 device, provides fully calibrated temperature sensing.
+
 This Device is available from ControlEverything.com [SKU: STS21_I2CS]
 
 https://www.controleverything.com/content/Temperature?sku=STS21_I2CS
@@ -37,5 +38,5 @@ Download (or git pull) the code in pi. Run the program
 $> python STS21.py
 ```
 
-The code output is temperature reading in degree Celsius and Fahrenheit.
+The code output is temperature reading in degree celsius and fahrenheit.
 
