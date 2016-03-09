@@ -2,7 +2,7 @@
 // Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
 // STS21
 // This code is designed to work with the STS21_I2CS I2C Mini Module available from ControlEverything.com.
-// https://www.controleverything.com/content/Temperature?sku=TMP112_I2CS#tabs-0-product_tabset-2
+// https://www.controleverything.com/content/Temperature?sku=STS21_I2CS#tabs-0-product_tabset-2
 
 import com.pi4j.io.i2c.I2CBus;
 import com.pi4j.io.i2c.I2CDevice;
