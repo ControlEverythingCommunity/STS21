@@ -1,3 +1,5 @@
 lang:java
 lang:python
+lang:arduino
+lang:particle
 sku:STS21_I2CS
