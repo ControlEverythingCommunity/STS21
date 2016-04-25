@@ -47,10 +47,16 @@ void loop()
     delay(300);
     
     // Convert the data
-    float cTemp   =  (((data[0] * 256) + (data[1] & 0xFC)) * (175.72 / 65536.0)) - 46.85;
-    
-    // Output data to serial monitor      
-    Serial.print("Temperature in Celsius : ");     
-    Serial.println(cTemp);
+    float cTemp = (((data[0] * 256) + (data[1] & 0xFC)) * (175.72 / 65536.0)) - 46.85;
+    float fTemp = cTemp * 1.8 + 32;
+  
+  // Output data to serial monitor
+  Serial.print("Temperature in Celsius:  ");
+  Serial.print(cTemp);
+  Serial.println(" C");
+  Serial.print("Temperature in Fahrenheit:  ");
+  Serial.print(fTemp);
+  Serial.println(" F");  
+  delay(300);
 }
 
