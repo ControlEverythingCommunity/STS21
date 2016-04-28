@@ -34,14 +34,7 @@ void loop()
     Wire.write(0xF3);
     // End I2C Transmission
     Wire.endTransmission();
-    delay(300);
-    
-    // Start I2C Transmission
-    Wire.beginTransmission(addr);   
-    // Select data registers 
-    Wire.write(addr);
-    // End I2C Transmission
-    Wire.endTransmission();
+    delay(500);
     
     // Request 2 bytes of data
     Wire.requestFrom(addr, 2);       
@@ -65,4 +58,3 @@ void loop()
     delay(1000); 
 
 }
-
