@@ -4,7 +4,7 @@
 // This code is designed to work with the STS21_I2CS I2C Mini Module available from ControlEverything.com.
 // https://www.controleverything.com/content/Temperature?sku=STS21_I2CS#tabs-0-product_tabset-2
 
-#include <Wire.h>;
+#include <Wire.h>
 
 // STS21 I2C address is 0x4A(74)
 #define addr 0x4A
