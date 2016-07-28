@@ -24,7 +24,7 @@ void main()
     ioctl(file, I2C_SLAVE, 0x4A);
     
     // Send temperature measurement command, NO HOLD master
-	char config[1] = {0};
+    char config[1] = {0};
     config[0] = 0xF3;
     write(file, config, 1);
     sleep(1);
@@ -34,7 +34,7 @@ void main()
 	char data[2] = {0};
     if(read(file, data, 2) != 2)
     {
-        printf("Erorr : Input/output Erorr \n");
+        printf("Error : Input/Output error \n");
     }
     else
     {
