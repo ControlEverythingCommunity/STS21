@@ -47,5 +47,4 @@ void main()
         printf("Temperature in Celsius is : %.2f C \n", cTemp);
         printf("Temperature in Fahrenheit is : %.2f F \n", fTemp);
     }
-    
 }
