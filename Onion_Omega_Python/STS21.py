@@ -12,15 +12,14 @@ i2c = onionI2C.OnionI2C()
 
 # STS21 address, 0x4A(74)
 # Select Command
-#		0xF3(243)	Temperature measurement in NO HOLD mode
+#		0xF3(243)	Temperature measurement in NO HOLD MASTER mode
 bytes = [0xF3]
 i2c.write(0x4A, bytes)
 
 time.sleep(0.5)
 
 # STS21 address, 0x4A(74)
-# Read data back, 2 bytes
-# cTemp MSB, cTemp LSB
+# Read data back, 2 bytes, MSB first
 data = i2c.readBytes(0x4A, 0x00, 1)
 data1 = i2c.readBytes(0x4A, 0x00, 1)
 
