@@ -10,7 +10,7 @@
 // STS21 I2C address is 0x4A(74)
 #define addr 0x4A
 
-float cTemp = 0.0;
+double cTemp = 0.0;
 
 void setup() 
   {         
